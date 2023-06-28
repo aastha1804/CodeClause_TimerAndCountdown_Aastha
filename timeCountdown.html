@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TimerCountDown</title>
+    <link rel="stylesheet" type="text/css" href="timeCountdown.css">
+</head>
+<body>
+    <a href="main.html"><img src="home1.png" id="home"><br>Home</a>
+	<div id="wallpaper">
+        <h2 id="head">Enter Time in HH:MM:SS Format</h2>
+        <input type="text" id="entry" placeholder=" Enter time here..">
+        <div id="start" class="button">
+            <h4 onclick="startCounter()">Start Counter</h4>
+        </div>
+        <div id="reset" class="button">
+            <h4 onclick="resetTime()">Reset</h4>
+        </div>
+    </div>
+    <div id="black">
+        <div class="counter" id="hours">
+            <p class="current">00</p>
+            <p class="next">01</p>
+        </div>
+        <h1>:</h1>
+        <div class="counter" id="minutes">
+            <p class="current">00</p>
+            <p class="next">01</p>
+        </div>
+        <h1>:</h1>
+        <div class="counter" id="seconds">
+            <p class="current">00</p>
+            <p class="next">01</p>
+        </div>
+    </div>
+    <div class="clock-container">
+        <img src="clock.gif" alt="clock">
+    </div>
+      
+    <script type="text/javascript" src="timeCountdown.js"></script>
+</body>
+</html>
